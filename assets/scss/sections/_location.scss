@@ -1,0 +1,154 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.location {
+    justify-content: start;
+    background: url('../../assets/images/location_bg.webp') no-repeat center/cover;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 500 / 889;
+
+    .location-name {
+        margin-top: 26%;
+        font-size: 39px;
+        font-weight: 300;
+        color: $secondary-color;
+    }
+
+    .address {
+        font-size: 7.3px;
+        margin-bottom: 6%;
+    }
+
+    .map {
+        max-width: 211px;
+        width: 100%;
+        aspect-ratio: 211 / 195;
+        margin-bottom: 8%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .btn-map {
+        text-decoration: none;
+        color: #eeede8ff;
+        background-color: $secondary-color;
+        padding: 1% 8%;
+        border-radius: 5px;
+        margin-bottom: 8%;
+    }
+
+    .timeline {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .logo {
+            max-width: 37px;
+            width: 100%;
+            aspect-ratio: 37 / 58;
+            margin: 10% 0 6%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .title {
+            font-size: 14.38px;
+            color: #eeede8ff;
+            margin-bottom: 8%;
+        }
+        .time-box {
+            width: 100%;
+            .timeline-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2%;
+                .icon { 
+                    max-width: 20px;
+                    width: 100%;
+                    margin-right: 3%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .description {
+                    font-size: 11.77px;
+                    color: #eeede8ff;
+                }
+            }
+
+            .timeline-item:nth-child(2) {
+                .icon {
+                    max-width: 27px;
+                }
+            }
+
+            .timeline-item:nth-child(3) {
+                .icon {
+                    max-width: 15px;
+                }
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .location-name {
+            font-size: 7.9vw;
+        }
+
+        .address {
+            font-size: 1.5vw;
+        }
+
+        .map {
+            max-width: 42%;
+        }
+
+        .btn-map {
+            font-size: 1.9vw;
+        }
+
+        .timeline {
+            .logo {
+                max-width: 7.6vw;
+            }
+
+            .title {
+                font-size: 2.9vw;
+            }
+
+            .time-box {
+                .timeline-item {
+                    .icon { 
+                        max-width: 4vw;
+                    }
+    
+                    .description {
+                        font-size: 2.4vw;
+                    }
+                }
+
+                .timeline-item:nth-child(2) {
+                    .icon {
+                        max-width: 4vw;
+                    }
+                }
+    
+                .timeline-item:nth-child(3) {
+                    .icon {
+                        max-width: 2.4vw;
+                    }
+                }
+            }
+        }
+    }
+}

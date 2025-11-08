@@ -1,0 +1,81 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.our-story {
+    background: url('../../assets/images/our-story-bg.webp') no-repeat center/cover,
+                url('../../assets/images/base-our-story-bg.webp') no-repeat bottom/cover;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 500 / 890;
+
+    .logo {
+        max-width: 33px;
+        width: 100%;
+        margin-bottom: 4%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    h2 {
+        font-size: 15px;
+        color: $secondary-color;
+        font-weight: 300;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-size: 34px;
+        color: $secondary-color;
+        font-weight: 300;
+    }
+    p.subtext {
+        color: $secondary-color;
+        font-size: 12px;
+    }
+    .photo {
+        max-width: 301px;
+        width: 100%;
+        aspect-ratio: 301 / 118;
+        margin: 4% 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        text-align: justify;
+        text-align-last: center;
+        padding: 0 20%;
+        
+        p {
+            margin-bottom: 5%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .logo {
+            max-width: 6.8vw;
+        }
+        h2 {
+            font-size: 3vw;
+        }
+        h3 {
+            font-size: 6.8vw;
+        }
+        p.subtext {
+            font-size: 2.4vw;
+        }
+
+        .photo {
+            max-width: 60vw;
+        }
+
+        .text {
+            p {
+                font-size: 1.9vw;
+            }
+        }
+    }
+}

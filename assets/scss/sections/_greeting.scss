@@ -1,0 +1,76 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.greeting {
+    background: url('../../assets/images/greeting.webp') no-repeat center/cover;
+    max-width: 500px;
+    width: 100%;
+    aspect-ratio: 500 / 890;
+
+    .content {
+        width: 100%;
+        padding: 27%;
+        h2 {
+            font-size: 16.6px;
+            font-weight: 300;
+            color: $secondary-color;
+            padding-bottom: 20%;
+        }
+
+        p {
+            text-align: justify;
+            text-align-last: center;
+            padding-bottom: 20%;
+        }
+
+        .signature {
+            display: flex;
+            justify-content: space-around;
+
+            .img-box {
+                @include flex-center;
+            }
+
+            img.wife-name {
+                width: 54px;
+                height: auto;
+            }
+
+            img.logo-couple {
+                width: 21px;
+                height: auto;
+            }
+
+            img.husband-name {
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            h2 {
+                font-size: 3.5vw;
+            }
+    
+            p {
+                font-size: 1.8vw;
+            }
+
+            .signature {
+                img.wife-name {
+                    width: 10vw;
+                }
+    
+                img.logo-couple {
+                    width: 5vw;
+                }
+    
+                img.husband-name {
+                    width:10vw;
+                }
+            }
+        }
+    }
+}
