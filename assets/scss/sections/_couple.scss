@@ -9,7 +9,7 @@
     aspect-ratio: 500 / 890;
 
     h2 {
-        font-size: 16.6px;
+        font-size: 18.6px;
         font-weight: 300;
         color: $secondary-color;
         padding-bottom: 6%;
@@ -27,15 +27,14 @@
         }
     }
 
-    .save-the-date-photo {
-        max-width: 171px;
-        width: 100%;
-        aspect-ratio: 171 / 44;
+    .save-the-date {
         margin: 10% 0;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        p {
+            font-family: '1FTV-VIP-Bengoda', sans-serif;
+            color: #2c2722ff;
+            font-weight: 300;
+            transform: rotate(-5deg);
+            font-size: 50px;
         }
     }
 
@@ -82,20 +81,22 @@
     
     @media (max-width: 500px) {
         h2 {
-            font-size: 3.3vw;
+            font-size: 3.8vw;
         }
 
         .couple-photo {
             max-width: 40vw;
         }
     
-        .save-the-date-photo {
-            max-width: 34vw;
+        .save-the-date {
+            p {
+                font-size: 10vw;
+            }
         }
     
         .subtext {
             p {
-                font-size: 1.85vw;
+                font-size: 2.25vw;
             }
         }
 

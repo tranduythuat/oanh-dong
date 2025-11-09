@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "Lora";
-  src: url("../../assets/fonts/LORA-VARIABLEFONT_WGHT.TTF") format("TTF");
+  src: url("../../assets/fonts/LORA-VARIABLEFONT_WGHT (2).TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +28,7 @@
 body {
   font-family: "Lora", sans-serif;
   color: #2c2722;
-  font-size: 0.583em;
+  font-size: 11.3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +276,7 @@ header {
   padding: 27%;
 }
 .greeting .content h2 {
-  font-size: 16.6px;
+  font-size: 18.6px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 20%;
@@ -288,40 +288,45 @@ header {
 }
 .greeting .content .signature {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  margin-left: -8%;
 }
 .greeting .content .signature .img-box {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.greeting .content .signature img.wife-name {
-  width: 54px;
-  height: auto;
+  margin: 0 8%;
 }
 .greeting .content .signature img.logo-couple {
-  width: 21px;
+  width: 25px;
   height: auto;
 }
-.greeting .content .signature img.husband-name {
-  width: 40px;
-  height: auto;
+.greeting .content .signature .wife-name, .greeting .content .signature .husband-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greeting .content .signature p {
+  display: block;
+  font-size: 13px;
+  font-family: "1FTV-VIP-Bengoda", sans-serif;
+  font-weight: 300;
+  color: #5a3a21;
+  padding: 0;
 }
 @media (max-width: 500px) {
   .greeting .content h2 {
-    font-size: 3.5vw;
+    font-size: 3.8vw;
   }
   .greeting .content p {
-    font-size: 1.8vw;
-  }
-  .greeting .content .signature img.wife-name {
-    width: 10vw;
+    font-size: 2.25vw;
   }
   .greeting .content .signature img.logo-couple {
-    width: 5vw;
+    width: 5.5vw;
   }
-  .greeting .content .signature img.husband-name {
-    width: 10vw;
+  .greeting .content .signature p {
+    font-size: 2.6vw;
   }
 }
 
@@ -332,7 +337,7 @@ header {
   aspect-ratio: 500/890;
 }
 .couple h2 {
-  font-size: 16.6px;
+  font-size: 18.6px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 6%;
@@ -347,16 +352,15 @@ header {
   height: 100%;
   object-fit: cover;
 }
-.couple .save-the-date-photo {
-  max-width: 171px;
-  width: 100%;
-  aspect-ratio: 171/44;
+.couple .save-the-date {
   margin: 10% 0;
 }
-.couple .save-the-date-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.couple .save-the-date p {
+  font-family: "1FTV-VIP-Bengoda", sans-serif;
+  color: #2c2722;
+  font-weight: 300;
+  transform: rotate(-5deg);
+  font-size: 50px;
 }
 .couple .subtext {
   padding: 0 10%;
@@ -396,16 +400,16 @@ header {
 }
 @media (max-width: 500px) {
   .couple h2 {
-    font-size: 3.3vw;
+    font-size: 3.8vw;
   }
   .couple .couple-photo {
     max-width: 40vw;
   }
-  .couple .save-the-date-photo {
-    max-width: 34vw;
+  .couple .save-the-date p {
+    font-size: 10vw;
   }
   .couple .subtext p {
-    font-size: 1.85vw;
+    font-size: 2.25vw;
   }
   .couple .date-time .date {
     font-size: 7.5vw;
@@ -435,7 +439,7 @@ header {
   color: #5a3a21;
 }
 .location .address {
-  font-size: 7.3px;
+  font-size: 9.3px;
   margin-bottom: 6%;
 }
 .location .map {
@@ -476,9 +480,9 @@ header {
   object-fit: cover;
 }
 .location .timeline .title {
-  font-size: 14.38px;
+  font-size: 16.38px;
   color: #eeede8;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
 }
 .location .timeline .time-box {
   width: 100%;
@@ -499,7 +503,7 @@ header {
   height: auto;
 }
 .location .timeline .time-box .timeline-item .description {
-  font-size: 11.77px;
+  font-size: 13.77px;
   color: #eeede8;
 }
 .location .timeline .time-box .timeline-item:nth-child(2) .icon {
@@ -513,31 +517,31 @@ header {
     font-size: 7.9vw;
   }
   .location .address {
-    font-size: 1.5vw;
+    font-size: 1.9vw;
   }
   .location .map {
     max-width: 42%;
   }
   .location .btn-map {
-    font-size: 1.9vw;
+    font-size: 2.2vw;
   }
   .location .timeline .logo {
     max-width: 7.6vw;
   }
   .location .timeline .title {
-    font-size: 2.9vw;
+    font-size: 3.3vw;
   }
   .location .timeline .time-box .timeline-item .icon {
     max-width: 4vw;
   }
   .location .timeline .time-box .timeline-item .description {
-    font-size: 2.4vw;
+    font-size: 2.7vw;
   }
   .location .timeline .time-box .timeline-item:nth-child(2) .icon {
-    max-width: 4vw;
+    max-width: 5.5vw;
   }
   .location .timeline .time-box .timeline-item:nth-child(3) .icon {
-    max-width: 2.4vw;
+    max-width: 2.8vw;
   }
 }
 
@@ -557,7 +561,7 @@ header {
   height: auto;
 }
 .our-story h2 {
-  font-size: 15px;
+  font-size: 17px;
   color: #5a3a21;
   font-weight: 300;
   margin-bottom: 5%;
@@ -569,7 +573,7 @@ header {
 }
 .our-story p.subtext {
   color: #5a3a21;
-  font-size: 12px;
+  font-size: 14px;
 }
 .our-story .photo {
   max-width: 301px;
@@ -589,25 +593,26 @@ header {
 }
 .our-story .text p {
   margin-bottom: 5%;
+  font-size: 11px;
 }
 @media (max-width: 500px) {
   .our-story .logo {
     max-width: 6.8vw;
   }
   .our-story h2 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .our-story h3 {
     font-size: 6.8vw;
   }
   .our-story p.subtext {
-    font-size: 2.4vw;
+    font-size: 2.8vw;
   }
   .our-story .photo {
     max-width: 60vw;
   }
   .our-story .text p {
-    font-size: 1.9vw;
+    font-size: 2.25vw;
   }
 }
 
@@ -618,7 +623,7 @@ header {
   aspect-ratio: 500/890;
 }
 .photos h2 {
-  font-size: 19.6px;
+  font-size: 21.6px;
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 5%;
@@ -673,10 +678,10 @@ header {
 }
 @media (max-width: 500px) {
   .photos h2 {
-    font-size: 3.9vw;
+    font-size: 4.2vw;
   }
   .photos p {
-    font-size: 1.85vw;
+    font-size: 2.25vw;
   }
 }
 
@@ -691,8 +696,8 @@ header {
   font-size: 16px;
   font-weight: 300;
   color: #5a3a21;
-  margin-top: 28%;
-  margin-bottom: 8%;
+  margin-top: 26%;
+  margin-bottom: 6%;
 }
 .rsvp p.subtext {
   padding: 0 23%;
@@ -701,11 +706,11 @@ header {
 }
 .rsvp #rsvp-form {
   width: 100%;
-  padding: 13% 20% 5%;
+  padding: 12% 20% 5%;
 }
 .rsvp .form-group {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
 }
 .rsvp .form-group input[type=radio] {
   display: none;
@@ -740,13 +745,13 @@ header {
   box-sizing: border-box;
   outline: none;
   background-color: transparent;
-  font-size: 9.2px;
+  font-size: 11.2px;
 }
 .rsvp .form-group input.input-text::placeholder {
   font-size: 0.8em;
 }
 .rsvp .form-group textarea.input-text {
-  font-size: 7.2px;
+  font-size: 9.2px;
   max-width: 311px;
   width: 100%;
   aspect-ratio: 311/71;
@@ -766,15 +771,16 @@ header {
   text-align: center;
 }
 .rsvp .wish-box h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   color: #5a3a21;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 .rsvp .wish-box p {
   text-align: justify;
   text-align-last: center;
   padding: 10% 0;
+  font-size: 11px;
 }
 .rsvp .form-actions {
   display: flex;
@@ -801,23 +807,23 @@ header {
     font-size: 3.2vw;
   }
   .rsvp p.subtext {
-    font-size: 1.84vw;
+    font-size: 2.24vw;
   }
   .rsvp .form-group .radio-button {
-    font-size: 1.52vw;
+    font-size: 1.8vw;
     width: 27.5vw;
   }
   .rsvp .form-group input.input-text {
-    font-size: 1.8vw;
+    font-size: 2.25vw;
   }
   .rsvp .form-group textarea.input-text {
-    font-size: 1.45vw;
+    font-size: 1.8vw;
   }
   .rsvp .wish-box h2 {
-    font-size: 3.2vw;
+    font-size: 3.6vw;
   }
   .rsvp .wish-box p {
-    font-size: 1.85vw;
+    font-size: 2.2vw;
   }
   .rsvp .form-actions button.btn {
     font-size: 2.2vw;
@@ -831,7 +837,7 @@ header {
   aspect-ratio: 500/890;
 }
 .thankyou h2 {
-  font-size: 20.8px;
+  font-size: 22.8px;
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 10%;
@@ -866,7 +872,7 @@ header {
 }
 @media (max-width: 500px) {
   .thankyou h2 {
-    font-size: 4.2vw;
+    font-size: 4.6vw;
   }
   .thankyou .photo {
     max-width: 61vw;
@@ -875,7 +881,7 @@ header {
     width: 5.4vw;
   }
   .thankyou .subtext .text p {
-    font-size: 1.85vw;
+    font-size: 2.25vw;
   }
 }
 

@@ -8,7 +8,7 @@
     aspect-ratio: 500 / 890;
 
     h2 {
-        font-size: 19.6px;
+        font-size: 21.6px;
         font-weight: 300;
         color: $secondary-color;
         margin-bottom: 5%;
@@ -71,11 +71,11 @@
 
     @media (max-width: 500px) {
         h2 {
-            font-size: 3.9vw;
+            font-size: 4.2vw;
         }
     
         p {
-            font-size: 1.85vw;
+            font-size: 2.25vw;
         }
     }
 }

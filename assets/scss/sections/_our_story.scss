@@ -18,7 +18,7 @@
         }
     }
     h2 {
-        font-size: 15px;
+        font-size: 17px;
         color: $secondary-color;
         font-weight: 300;
         margin-bottom: 5%;
@@ -30,7 +30,7 @@
     }
     p.subtext {
         color: $secondary-color;
-        font-size: 12px;
+        font-size: 14px;
     }
     .photo {
         max-width: 301px;
@@ -51,6 +51,7 @@
         
         p {
             margin-bottom: 5%;
+            font-size: 11px;
         }
     }
 
@@ -59,13 +60,13 @@
             max-width: 6.8vw;
         }
         h2 {
-            font-size: 3vw;
+            font-size: 3.5vw;
         }
         h3 {
             font-size: 6.8vw;
         }
         p.subtext {
-            font-size: 2.4vw;
+            font-size: 2.8vw;
         }
 
         .photo {
@@ -74,7 +75,7 @@
 
         .text {
             p {
-                font-size: 1.9vw;
+                font-size: 2.25vw;
             }
         }
     }
