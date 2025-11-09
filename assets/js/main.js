@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   gsapFadeIn(".animate-fade");
   gsapFadeRight(".fade-right");
   gsapFadeLeft(".fade-left");
+  gsapFadeUp(".fade-up");
+  gsapFadeDown(".fade-down");
   gsapRotateBottomLeft(".rotate-bl");
   gsapRotateBottomRight(".rotate-br");
   gsapFlipVerticalLeft(".flip-vertical-left");
@@ -14,19 +16,35 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap_rotate_bl__float(".rotate-bl--float");
 
   // Tạo timeline
-  const tl = gsap.timeline({
+  const tl_coudontwn = gsap.timeline({
     repeatDelay: 0,  // delay giữa các lần lặp
     defaults: { duration: .8, ease: "power2.out" }, // giá trị mặc định
     scrollTrigger: {
-      trigger: ".box",
-      start: "top 90%", // khi phần tử xuất hiện 80% trong viewport
+      trigger: ".countdown",
+      start: "top 85%", // khi phần tử xuất hiện 80% trong viewport
     }
   });
 
   // Thêm các animation theo thứ tự
-  tl.from(".red", { x: -100, opacity: 0 })        // box đỏ bay xuống
-    .from(".blue", { x: -100, opacity: 0 }, "-=0.3")       // box xanh bay từ trái
-    .from(".green", { x: -100, opacity: 0 }, "-=0.3");    // box xanh lá phóng to dần
+  tl_coudontwn.from(".days", { y: 100, opacity: 0 })       
+    .from(".hours", { y: 100, opacity: 0 }, "-=0.5")     
+    .from(".minutes", { y: 100, opacity: 0 }, "-=0.5") 
+    .from(".seconds", { y: 100, opacity: 0 }, "-=0.5");    
+
+  const tl_timeline = gsap.timeline({
+    repeatDelay: 0,  // delay giữa các lần lặp
+    defaults: { duration: .8, ease: "power2.out" }, // giá trị mặc định
+    scrollTrigger: {
+      trigger: ".time-box",
+      start: "top 90%", // khi phần tử xuất hiện 80% trong viewport
+    }
+  });
+
+  tl_timeline.from(".first", { x: -100, opacity: 0 })       
+  .from(".second", { x: -100, opacity: 0 }, "-=0.5")     
+  .from(".third", { x: -100, opacity: 0 }, "-=0.5") 
+  .from(".four", { x: -100, opacity: 0 }, "-=0.5")    
+  .from(".five", { x: -100, opacity: 0 }, "-=0.5");    
 
   const toggle = document.getElementById('nav-toggle');
   const menu = document.querySelector('.menu-items');

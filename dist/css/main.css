@@ -258,6 +258,7 @@ header {
   max-width: 500px;
   width: 100%;
   aspect-ratio: 500/891;
+  perspective: 1000px;
 }
 .cover img {
   width: 100%;
@@ -580,6 +581,7 @@ header {
   width: 100%;
   aspect-ratio: 301/118;
   margin: 4% 0;
+  perspective: 1000px;
 }
 .our-story .photo img {
   width: 100%;
@@ -848,6 +850,12 @@ header {
   aspect-ratio: 305/134;
   background-color: #5a3a21;
   margin-bottom: 7%;
+  perspective: 1000px;
+}
+.thankyou .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .thankyou .subtext {
   padding: 0 19%;
