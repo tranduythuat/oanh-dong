@@ -304,7 +304,7 @@
   <script src="assets/js/main.js"></script>
   <script>
     // Mốc thời gian đích (ví dụ ngày cưới)
-    const targetDate = new Date("2026-01-03T00:00:00");
+    const targetDate = new Date("2025-11-19T00:00:00");
 
     // Tính tháng, tuần, ngày thực tế (không tính giây)
     function updateDateParts() {
@@ -331,9 +331,9 @@
       let days = remainingDays % 7;
 
       // Cập nhật DOM
-      document.getElementById("months").textContent = months;
-      document.getElementById("weeks").textContent = weeks;
-      document.getElementById("days").textContent = days;
+      document.getElementById("months").textContent = months.toString().padStart(2, "0");;
+      document.getElementById("weeks").textContent = weeks.toString().padStart(2, "0");;
+      document.getElementById("days").textContent = days.toString().padStart(2, "0");;
     }
 
     // === Bộ đếm giây chạy từ 59 → 0 lặp lại ===
