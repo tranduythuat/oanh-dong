@@ -9,7 +9,7 @@
     aspect-ratio: 500 / 890;
 
     h2 {
-        font-size: 22.8px;
+        font-size: 20.83px;
         font-weight: 300;
         color: $secondary-color;
         margin-bottom: 6%;
@@ -29,7 +29,7 @@
         }
     }
     .subtext {
-        padding: 0 19%;
+        padding: 0 18.7%;
         .divider {
             margin-bottom: 6%;
             
@@ -51,14 +51,15 @@
 
             p {
                 padding-bottom: 6%;
-                line-height: 1.7;
+                line-height: 180%;
+
             }
         }
     }
 
     @media (max-width: 500px) {
         h2 {
-            font-size: 4.6vw;
+            font-size: calc((20.83px / 500px) * 100vw);
         }
     
         .photo {
@@ -74,7 +75,7 @@
 
             .text {
                 p {
-                    font-size: 2.25vw;
+                    font-size: calc(($base-font-size / 500px) * 100vw);
                 }
             }
         }

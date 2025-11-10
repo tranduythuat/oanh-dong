@@ -9,7 +9,7 @@
     justify-content: start;
 
     h2.title {
-        font-size: 16px;
+        font-size: 16.66px;
         font-weight: 300;
         color: $secondary-color;
         margin-top: 26%;
@@ -20,6 +20,7 @@
         padding: 0 23%;
         text-align: justify;
         text-align-last: center;
+        line-height: 180%;
     }
 
     #rsvp-form {
@@ -73,7 +74,7 @@
         }
 
         textarea.input-text {
-            font-size: 9.2px;
+            font-size: $base-font-size;
             max-width: 311px;
             width: 100%;
             aspect-ratio: 311 / 71;
@@ -83,7 +84,7 @@
             padding: 3% 4%;
             box-sizing: border-box;
             outline: none;
-            margin-bottom: 5%;
+            margin-bottom: 8%;
         }
     }
 
@@ -96,7 +97,7 @@
         text-align: center;
 
         h2 {
-            font-size: 18px;
+            font-size: 16.66px;
             font-weight: 300;
             color: $secondary-color;
             margin-top: 20%;
@@ -105,8 +106,8 @@
         p {
             text-align: justify;
             text-align-last: center;
-            padding: 10% 0;
-            font-size: 11px;
+            padding: 10% 3%;
+            line-height: 180%;
         }
     }
 
@@ -115,6 +116,7 @@
         justify-content: center;
         button.btn {
             background-color: $secondary-color;
+            font-family: 'Lora', sans-serif;
             border: none;
             color: #fff;
             padding: 3% 12%;
@@ -134,11 +136,11 @@
 
     @media (max-width: 500px) {
         h2.title {
-            font-size: 3.2vw;
+            font-size: calc((16.66px / 500px) * 100vw);
         }
     
         p.subtext {
-            font-size: 2.24vw;
+            font-size: calc(($base-font-size / 500px) * 100vw);
         }
         
         .form-group {
@@ -158,11 +160,11 @@
 
         .wish-box {
             h2 {
-                font-size: 3.6vw;
+                font-size: calc((16.66px / 500px) * 100vw);
             }
         
             p {
-                font-size: 2.2vw;
+                font-size: calc(($base-font-size / 500px) * 100vw);
             }
         }
 

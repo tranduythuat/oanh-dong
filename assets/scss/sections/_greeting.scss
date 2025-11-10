@@ -11,7 +11,7 @@
         width: 100%;
         padding: 27%;
         h2 {
-            font-size: 18.6px;
+            font-size: 16.66px;
             font-weight: 300;
             color: $secondary-color;
             padding-bottom: 20%;
@@ -21,6 +21,7 @@
             text-align: justify;
             text-align-last: center;
             padding-bottom: 20%;
+            line-height: 180%;
         }
 
         .signature {
@@ -57,11 +58,12 @@
     @media (max-width: 500px) {
         .content {
             h2 {
-                font-size: 3.8vw;
+                font-size: calc((16.66px / 500px) * 100vw);
             }
     
             p {
-                font-size: 2.25vw;
+                // font-size: 1.85vw;
+                font-size: calc(($base-font-size / 500px) * 100vw);
             }
 
             .signature {

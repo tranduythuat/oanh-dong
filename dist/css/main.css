@@ -28,7 +28,7 @@
 body {
   font-family: "Lora", sans-serif;
   color: #2c2722;
-  font-size: 11.3px;
+  font-size: 9.33px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,9 +105,8 @@ section {
 
 .navbar-container .hamburger-lines .line {
   display: block;
-  height: 3px;
+  height: 2px;
   width: 100%;
-  border-radius: 10px;
   background: #5a3a21;
 }
 
@@ -188,14 +187,8 @@ section {
     right: 2.2%;
     width: 6vw;
   }
-  .navbar-container .hamburger-lines .line {
-    height: 12%;
-  }
-  .navbar .menu-items {
-    width: 60%;
-  }
   .navbar .menu-items li {
-    padding: 6%;
+    padding: 5% 6%;
     font-size: 2.9vw;
   }
 }
@@ -277,7 +270,7 @@ header {
   padding: 27%;
 }
 .greeting .content h2 {
-  font-size: 18.6px;
+  font-size: 16.66px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 20%;
@@ -286,6 +279,7 @@ header {
   text-align: justify;
   text-align-last: center;
   padding-bottom: 20%;
+  line-height: 180%;
 }
 .greeting .content .signature {
   display: flex;
@@ -318,10 +312,10 @@ header {
 }
 @media (max-width: 500px) {
   .greeting .content h2 {
-    font-size: 3.8vw;
+    font-size: 3.332vw;
   }
   .greeting .content p {
-    font-size: 2.25vw;
+    font-size: 1.866vw;
   }
   .greeting .content .signature img.logo-couple {
     width: 5.5vw;
@@ -338,7 +332,7 @@ header {
   aspect-ratio: 500/890;
 }
 .couple h2 {
-  font-size: 18.6px;
+  font-size: 16.66px;
   font-weight: 300;
   color: #5a3a21;
   padding-bottom: 6%;
@@ -361,13 +355,13 @@ header {
   color: #2c2722;
   font-weight: 300;
   transform: rotate(-5deg);
-  font-size: 50px;
+  font-size: 40px;
 }
 .couple .subtext {
-  padding: 0 10%;
+  padding: 0 12%;
 }
 .couple .subtext p {
-  line-height: 1.6;
+  line-height: 180%;
 }
 .couple .date-time {
   color: #5a3a21;
@@ -402,16 +396,16 @@ header {
 }
 @media (max-width: 500px) {
   .couple h2 {
-    font-size: 3.8vw;
+    font-size: 3.332vw;
   }
   .couple .couple-photo {
     max-width: 40vw;
   }
   .couple .save-the-date p {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .couple .subtext p {
-    font-size: 2.25vw;
+    font-size: 1.866vw;
   }
   .couple .date-time .date {
     font-size: 7.5vw;
@@ -441,7 +435,7 @@ header {
   color: #5a3a21;
 }
 .location .address {
-  font-size: 9.3px;
+  font-size: 9px;
   margin-bottom: 6%;
 }
 .location .map {
@@ -474,7 +468,7 @@ header {
   max-width: 37px;
   width: 100%;
   aspect-ratio: 37/58;
-  margin: 10% 0 6%;
+  margin: 9% 0 5%;
 }
 .location .timeline .logo img {
   width: 100%;
@@ -484,42 +478,48 @@ header {
 .location .timeline .title {
   font-size: 16.38px;
   color: #eeede8;
-  margin-bottom: 6%;
+  margin-bottom: 5%;
 }
 .location .timeline .time-box {
-  width: 100%;
+  width: 31%;
 }
 .location .timeline .time-box .timeline-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
 }
 .location .timeline .time-box .timeline-item .icon {
-  max-width: 20px;
-  width: 100%;
-  margin-right: 3%;
+  width: 15%;
+  height: 20%;
+  margin-right: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .location .timeline .time-box .timeline-item .icon img {
+  max-width: 15px;
   width: 100%;
   height: auto;
 }
 .location .timeline .time-box .timeline-item .description {
+  width: 85%;
   font-size: 13.77px;
   color: #eeede8;
+  text-align: left;
 }
-.location .timeline .time-box .timeline-item:nth-child(2) .icon {
-  max-width: 27px;
+.location .timeline .time-box .timeline-item:nth-child(2) .icon img {
+  max-width: 20px;
 }
-.location .timeline .time-box .timeline-item:nth-child(3) .icon {
-  max-width: 15px;
+.location .timeline .time-box .timeline-item:nth-child(3) .icon img {
+  width: 55%;
 }
 @media (max-width: 500px) {
   .location .location-name {
     font-size: 7.9vw;
   }
   .location .address {
-    font-size: 1.9vw;
+    font-size: 1.8vw;
   }
   .location .map {
     max-width: 42%;
@@ -539,12 +539,6 @@ header {
   .location .timeline .time-box .timeline-item .description {
     font-size: 2.7vw;
   }
-  .location .timeline .time-box .timeline-item:nth-child(2) .icon {
-    max-width: 5.5vw;
-  }
-  .location .timeline .time-box .timeline-item:nth-child(3) .icon {
-    max-width: 2.8vw;
-  }
 }
 
 .our-story {
@@ -563,7 +557,7 @@ header {
   height: auto;
 }
 .our-story h2 {
-  font-size: 17px;
+  font-size: 14.98px;
   color: #5a3a21;
   font-weight: 300;
   margin-bottom: 5%;
@@ -575,10 +569,10 @@ header {
 }
 .our-story p.subtext {
   color: #5a3a21;
-  font-size: 14px;
+  font-size: 12.43px;
 }
 .our-story .photo {
-  max-width: 301px;
+  max-width: 310px;
   width: 100%;
   aspect-ratio: 301/118;
   margin: 4% 0;
@@ -593,30 +587,30 @@ header {
 .our-story .text {
   text-align: justify;
   text-align-last: center;
-  padding: 0 20%;
+  padding: 0 19%;
 }
 .our-story .text p {
   margin-bottom: 5%;
-  font-size: 11px;
+  line-height: 180%;
 }
 @media (max-width: 500px) {
   .our-story .logo {
     max-width: 6.8vw;
   }
   .our-story h2 {
-    font-size: 3.5vw;
+    font-size: 2.996vw;
   }
   .our-story h3 {
     font-size: 6.8vw;
   }
   .our-story p.subtext {
-    font-size: 2.8vw;
+    font-size: 2.486vw;
   }
   .our-story .photo {
-    max-width: 60vw;
+    max-width: 62vw;
   }
   .our-story .text p {
-    font-size: 2.25vw;
+    font-size: 1.866vw;
   }
 }
 
@@ -627,7 +621,7 @@ header {
   aspect-ratio: 500/890;
 }
 .photos h2 {
-  font-size: 21.6px;
+  font-size: 19.68px;
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 5%;
@@ -637,6 +631,7 @@ header {
   text-align: justify;
   text-align-last: center;
   margin-bottom: 10%;
+  line-height: 180%;
 }
 .photos .photo-grid {
   width: 100%;
@@ -682,10 +677,10 @@ header {
 }
 @media (max-width: 500px) {
   .photos h2 {
-    font-size: 4.2vw;
+    font-size: 3.936vw;
   }
   .photos p {
-    font-size: 2.25vw;
+    font-size: 1.866vw;
   }
 }
 
@@ -697,7 +692,7 @@ header {
   justify-content: start;
 }
 .rsvp h2.title {
-  font-size: 16px;
+  font-size: 16.66px;
   font-weight: 300;
   color: #5a3a21;
   margin-top: 26%;
@@ -707,6 +702,7 @@ header {
   padding: 0 23%;
   text-align: justify;
   text-align-last: center;
+  line-height: 180%;
 }
 .rsvp #rsvp-form {
   width: 100%;
@@ -755,7 +751,7 @@ header {
   font-size: 0.8em;
 }
 .rsvp .form-group textarea.input-text {
-  font-size: 9.2px;
+  font-size: 9.33px;
   max-width: 311px;
   width: 100%;
   aspect-ratio: 311/71;
@@ -765,7 +761,7 @@ header {
   padding: 3% 4%;
   box-sizing: border-box;
   outline: none;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 .rsvp .form-group.options-group {
   display: flex;
@@ -775,7 +771,7 @@ header {
   text-align: center;
 }
 .rsvp .wish-box h2 {
-  font-size: 18px;
+  font-size: 16.66px;
   font-weight: 300;
   color: #5a3a21;
   margin-top: 20%;
@@ -783,8 +779,8 @@ header {
 .rsvp .wish-box p {
   text-align: justify;
   text-align-last: center;
-  padding: 10% 0;
-  font-size: 11px;
+  padding: 10% 3%;
+  line-height: 180%;
 }
 .rsvp .form-actions {
   display: flex;
@@ -792,6 +788,7 @@ header {
 }
 .rsvp .form-actions button.btn {
   background-color: #5a3a21;
+  font-family: "Lora", sans-serif;
   border: none;
   color: #fff;
   padding: 3% 12%;
@@ -808,10 +805,10 @@ header {
 }
 @media (max-width: 500px) {
   .rsvp h2.title {
-    font-size: 3.2vw;
+    font-size: 3.332vw;
   }
   .rsvp p.subtext {
-    font-size: 2.24vw;
+    font-size: 1.866vw;
   }
   .rsvp .form-group .radio-button {
     font-size: 1.8vw;
@@ -824,10 +821,10 @@ header {
     font-size: 1.8vw;
   }
   .rsvp .wish-box h2 {
-    font-size: 3.6vw;
+    font-size: 3.332vw;
   }
   .rsvp .wish-box p {
-    font-size: 2.2vw;
+    font-size: 1.866vw;
   }
   .rsvp .form-actions button.btn {
     font-size: 2.2vw;
@@ -841,7 +838,7 @@ header {
   aspect-ratio: 500/890;
 }
 .thankyou h2 {
-  font-size: 22.8px;
+  font-size: 20.83px;
   font-weight: 300;
   color: #5a3a21;
   margin-bottom: 6%;
@@ -860,7 +857,7 @@ header {
   object-fit: cover;
 }
 .thankyou .subtext {
-  padding: 0 19%;
+  padding: 0 18.7%;
 }
 .thankyou .subtext .divider {
   margin-bottom: 6%;
@@ -878,11 +875,11 @@ header {
 }
 .thankyou .subtext .text p {
   padding-bottom: 6%;
-  line-height: 1.7;
+  line-height: 180%;
 }
 @media (max-width: 500px) {
   .thankyou h2 {
-    font-size: 4.6vw;
+    font-size: 4.166vw;
   }
   .thankyou .photo {
     max-width: 61vw;
@@ -891,7 +888,7 @@ header {
     width: 5.4vw;
   }
   .thankyou .subtext .text p {
-    font-size: 2.25vw;
+    font-size: 1.866vw;
   }
 }
 

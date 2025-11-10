@@ -9,7 +9,7 @@
     aspect-ratio: 500 / 890;
 
     h2 {
-        font-size: 18.6px;
+        font-size: 16.66px;
         font-weight: 300;
         color: $secondary-color;
         padding-bottom: 6%;
@@ -34,14 +34,14 @@
             color: #2c2722ff;
             font-weight: 300;
             transform: rotate(-5deg);
-            font-size: 50px;
+            font-size: 40px;
         }
     }
 
     .subtext {
-        padding: 0 10%;
+        padding: 0 12%;
         p {
-            line-height: 1.6;
+            line-height: 180%;
         }
     }
 
@@ -82,7 +82,7 @@
     
     @media (max-width: 500px) {
         h2 {
-            font-size: 3.8vw;
+            font-size: calc((16.66px / 500px) * 100vw);
         }
 
         .couple-photo {
@@ -91,13 +91,13 @@
     
         .save-the-date {
             p {
-                font-size: 10vw;
+                font-size: calc((40px / 500px) * 100vw);
             }
         }
     
         .subtext {
             p {
-                font-size: 2.25vw;
+                font-size: calc(($base-font-size / 500px) * 100vw);
             }
         }
 
