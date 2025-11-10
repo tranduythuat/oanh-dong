@@ -583,6 +583,7 @@ header {
   aspect-ratio: 301/118;
   margin: 4% 0;
   perspective: 1000px;
+  background-color: #5a3a21;
 }
 .our-story .photo img {
   width: 100%;
@@ -843,7 +844,7 @@ header {
   font-size: 22.8px;
   font-weight: 300;
   color: #5a3a21;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 .thankyou .photo {
   max-width: 305px;
