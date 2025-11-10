@@ -390,6 +390,7 @@ header {
   width: 70%;
 }
 .couple .countdown .item {
+  width: 100%;
   padding: 0 5%;
 }
 .couple .countdown .item p.value {

@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Thêm các animation theo thứ tự
-  tl_coudontwn.from(".days", { y: 100, opacity: 0 })       
-    .from(".hours", { y: 100, opacity: 0 }, "-=0.5")     
-    .from(".minutes", { y: 100, opacity: 0 }, "-=0.5") 
+  tl_coudontwn.from(".months", { y: 100, opacity: 0 })       
+    .from(".weeks", { y: 100, opacity: 0 }, "-=0.5")     
+    .from(".days", { y: 100, opacity: 0 }, "-=0.5") 
     .from(".seconds", { y: 100, opacity: 0 }, "-=0.5");    
 
   const tl_timeline = gsap.timeline({
