@@ -80,4 +80,78 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
   });
+
+  const form = document.forms["rsvp-form"];
+  if (form) {
+    form.addEventListener("submit", (e) => handleFormSubmit(e));
+  }
 });
+
+async function handleFormSubmit(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  console.log("🚀 ~ handleFormSubmit ~ data:", data);
+
+  const {
+    name: name,
+    confirm: confirm,
+    guest_number: guest_number,
+    wish: wish,
+  } = data;
+  console.log("🚀 ~ handleFormSubmit 2~ data:", data);
+
+  // Thông báo khi bắt đầu gửi
+  Swal.fire({
+    title: 'Đang gửi ...',
+    text: "Vui lòng chờ trong giây lát",
+    icon: "info",
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    },
+  });
+
+  const url = "https://script.google.com/macros/s/AKfycbxqWNgtFl-uhVxPWxZyWtTZzD4DoZ0gT7n6nIifHePISi7XuK1QOTT_CFyTkRzaF_rAUg/exec?sheet=sheet-1";
+
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        name,
+        confirm,
+        guest_number,
+        wish
+      }),
+    });
+
+    const result = await res.json().catch(() => ({}));
+    console.log("Server response:", result);
+
+    form.reset();
+
+    // Thông báo thành công
+    Swal.fire({
+      title: "Thành công!",
+      text: "Cảm ơn bạn đã gửi phản hồi, thông tin đã được gửi đến dâu rể rồi nha",
+      icon: "success",
+      confirmButtonText: "OK",
+      confirmButtonColor: "#000",
+    });
+  } catch (error) {
+    console.error("Error:", error);
+
+    // Thông báo lỗi
+    Swal.fire({
+      title: "Lỗi!",
+      text: "OPPS! Đã xảy ra lỗi: " + error.message,
+      icon: "error",
+      confirmButtonText: "Thử lại",
+      confirmButtonColor: "#000",
+    });
+  }
+}
+
