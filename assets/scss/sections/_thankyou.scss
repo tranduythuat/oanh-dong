@@ -46,14 +46,19 @@
         }
 
         .text {
-            text-align: justify;
-            text-align-last: center;
-
-            p {
-                padding-bottom: 6%;
-                line-height: 180%;
-
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 6%;
             }
+            // text-align: center;
+            // text-align-last: center;
+
+            // p {
+            //     padding-bottom: 6%;
+            //     line-height: 180%;
+
+            // }
         }
     }
 

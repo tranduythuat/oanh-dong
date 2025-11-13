@@ -867,13 +867,10 @@ header {
 .thankyou .subtext .divider:last-child img {
   transform: rotate(180deg);
 }
-.thankyou .subtext .text {
-  text-align: justify;
-  text-align-last: center;
-}
-.thankyou .subtext .text p {
-  padding-bottom: 6%;
-  line-height: 180%;
+.thankyou .subtext .text img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 6%;
 }
 @media (max-width: 500px) {
   .thankyou h2 {
